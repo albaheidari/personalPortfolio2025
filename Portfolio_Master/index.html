@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alba Heidari · Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="work.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ <header class="hero-header" id="hero">
+     <!-- Vídeo / poster de fondo -->
+    <div class="video-wrapper">
+    <div class="video-wrapper"> <video id="hero-video" class="hero-media" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg"> <source src="https://www.dropbox.com/scl/fi/cyj4osi886z8kueywlkym/portfolio_mvideo.mp4?rlkey=x6f8tssbsopp1rdou7skcdpgb&st=zhsmg0k2&raw=1" type="video/mp4"> </video>  
+      <!-- Controles de texto (vertical) -->
+      <div class="text-controls" aria-label="video controls">
+        <button id="ctl-play"  class="ctl is-off" type="button" aria-pressed="false">PLAY</button>
+        <button id="ctl-mute"  class="ctl is-off" type="button" aria-pressed="true">MUTE</button>
+      </div>
+
+
+      <!-- Barra superior -->
+      <div class="nav-container">
+        <!-- Título a la izquierda (sustituye al logo) -->
+        <a href="#" class="site-title">Alba Heidari</a>
+
+        <!-- Hamburguesa (móvil) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+        <label for="menu-toggle" class="hamburger" aria-controls="site-nav" aria-expanded="false"></label>
+
+        <!-- Navegación -->
+        <nav class="nav" id="site-nav">
+          <button class="close-nav" aria-label="Close menu">✕</button> 
+          <a href="#hero">HOME</a>
+          <a href="work.html">WORK</a>
+          <a href="about.html">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+
+        <!-- Fondo clicable para cerrar menú en móvil -->
+        <div class="nav-backdrop" aria-hidden="true"></div>
+      </div>
+      
+  </header>
+  
+  <!-- FOOTER -->
+  <footer id="contact" class="site-footer">
+
+    <!-- Sociales -->
+    <div class="footer-social">
+      <a href="https://ra.co/dj/albaheidari" target="_blank" rel="noopener" aria-label="Resident Advisor" class="soc">RA</a>
+      <a href="https://www.linkedin.com/in/alba-heidari-211616113/" target="_blank" rel="noopener" aria-label="LinkedIn" class="soc">in</a>
+    </div>
+
+    <!-- Contacto y créditos -->
+    <div class="footer-meta">
+      <p>Email: <a href="mailto:albaheidari@gmail.com">albaheidari@gmail.com</a></p>
+      <p>Design & Development: <a href="#" target="_blank" rel="noopener">Alba Heidari</a></p>
+    </div>
+
+    <div class="footer-powered">
+      <span>— PORTFOLIO —</span>
+      <strong>Alba heidari</strong>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
